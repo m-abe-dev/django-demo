@@ -11,11 +11,12 @@
     <h2>最新の投稿</h2>
 
     {% for post in posts.all %}
-
+      #{{ post.id }} :
       {{ post.title }}
       <br /><br />
       {{ post.published }}
       <br /><br />
+      <img src="{{ post.image.url }}" />
       {{ post.summary }}
       <br /><br />
 
